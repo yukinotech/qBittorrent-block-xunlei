@@ -21,7 +21,17 @@ qBittorrent-Enhanced-Edition 编译打包时，已经集成屏蔽迅雷的列表
 ### 方法一
 
 有node环境直接调用即可
+```
+// 安装依赖
+npm install
+// or 
+yarn
+
+node main.js
+```
 
 ### 方法二
 
-有node环境直接调用即可
+直接下载release包(包含runtime，包体积较大)
+
+双击，windows下，执行`run.cmd`，弹出小窗即成功
