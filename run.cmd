@@ -1,2 +1,2 @@
-node main.js
+node-pkg\node.exe main.js
 pause

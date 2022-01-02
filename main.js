@@ -1,5 +1,6 @@
 const axios = require("axios")
 const fsPromises = require("fs/promises")
+const fs = require("fs")
 const path = require("path")
 const qs = require("qs")
 // const winston = require("winston")
@@ -26,6 +27,20 @@ let dateStr = new Date()
 // })
 
 console.log("log start", dateStr)
+
+const configPath = path.join(__dirname, "./config.json")
+const config = fs.readFileSync(configPath, {
+  encoding: "utf-8",
+})
+const configObj = JSON.parse(config)
+
+console.log("settings ", {
+  username:
+    configObj.username.slice(0, 1) + "***" + configObj.username.slice(4),
+  password:
+    configObj.password.slice(0, 1) + "***" + configObj.password.slice(4),
+  root: configObj.root.slice(0, 1) + "***" + configObj.root.slice(4),
+})
 // logFile.info("log start")
 
 let isBan = (client) => {
