@@ -1,0 +1,15 @@
+# yarn.lock
+node_modules
+dist
+
+# vscode
+.vscode
+
+# jest coverage
+coverage
+
+# build
+build
+
+*.log
+
