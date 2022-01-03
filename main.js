@@ -156,7 +156,6 @@ let main = async () => {
   // logFile.info("mission end")
 }
 
-main()
 
 setInterval(async () => {
   try {
