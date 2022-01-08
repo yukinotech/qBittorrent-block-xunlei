@@ -134,7 +134,7 @@ let main = async () => {
               cookie,
             },
             data: qs.stringify({
-              // hash: torrentsArr[i],
+              hash: torrentsArr[i],
               peers: peersArr[j],
             }),
           })
